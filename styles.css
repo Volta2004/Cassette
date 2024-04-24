@@ -1,0 +1,185 @@
+/*GENERAL*/
+
+h1, h2, h3, h4, h5, p , ul{
+    font-family: Montserrat; 
+    color: white;   
+}
+
+.imagenCassette{
+  position: absolute;
+  top: 0%;
+  border-radius: 10%;
+}
+body{
+  background-color: white;
+}
+footer{
+  background: #ba090f;
+  position: sticky;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  height: 300px;
+}
+.textHeaderFooter{
+  color: black;
+}
+h1 {
+    font-size: 40px;
+    
+}
+h2{
+    font-size: 20px;
+     
+}
+a {
+  color: beige;
+}
+
+head{
+  position: sticky;
+}
+
+/*Sign*/
+
+.formulario{
+  background: #ba090f;
+  border-radius: 30px;
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  top: 20%;
+  left: 40%;
+}
+#textSignInUp{
+  position: absolute;
+  top: 2%;
+  left: 15%;
+  color: white;
+  font-size: 25px;
+
+}
+#textEmail{
+  position: absolute;
+  left: 43%;
+  top: 20%;
+}
+#textUsername{
+  position: absolute;
+  left: 37%;
+  top: 35%;
+}
+#textPassword{
+  position: absolute;
+  left: 37%;
+  top: 50%;
+}
+
+#rememberMe{
+  position: absolute;
+  left: 30%;
+  top: 71%;
+}
+.boxes{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 70%;
+  height: 5%;
+  left: 15%;
+}
+#email{
+  position:absolute;
+  top: 32%;
+}
+#username{
+  position:absolute;
+  top: 47%;
+}
+#password{
+  position:absolute;
+  top: 62%;
+}
+#boxRememberMe{
+  position: absolute;
+  padding: 10px;
+  left: 20%;
+  top: 75%;
+  width: 7%;
+}
+#submit{ 
+  position:absolute;
+  top: 87%;
+  height: 10%;
+  background-color: grey;
+  color: white;
+  border: transparent;
+
+}
+
+/*INDEX*/
+
+.box1 {
+  background: #a90006;
+  width: 500px;
+  padding: 20px;
+  margin-top: 35px;
+  border-radius: 10px;
+
+}
+
+/*FOOTER*/
+
+
+.boxFooter{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.formFooter{
+  height: 100px;
+}
+
+.textFooter{
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  height: 20px;
+}
+
+.submitFooter{
+  position:absolute;
+  left: 35%;
+  top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cassette{
+  text-align: left;
+}
+
+.centrado{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.temas{
+  border-radius: 20px;
+}
