@@ -129,6 +129,36 @@ head{
 
 }
 
+/*BOTONES DESPLEGABLES*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  width: 700px;
+  padding: 40px;
+  background: #fffcfc;
+  margin: right;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+summary{
+  background: #ba090f;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+p{
+  padding: 15px;
+  background: #fff;
+  color: #333;
+}
+
 
 /*FOOTER*/
 
