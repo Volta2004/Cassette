@@ -1,8 +1,14 @@
 /*GENERAL*/
 
-h1, h2, h3, h4, h5, p , ul{
+h1, h2, h4, h5, p , ul{
     font-family: Montserrat; 
     color: white;   
+}
+
+h3{
+  font-family: Montserrat;
+  color: white;
+  text-align: center;
 }
 
 .imagenCassette{
@@ -11,16 +17,18 @@ h1, h2, h3, h4, h5, p , ul{
   border-radius: 10%;
 }
 body{
-  background-color: white;
+  background-color: #333;
 }
 footer{
   background: #ba090f;
-  position: sticky;
+  position: absolute;
+  top: 90%;
+  left: 30%;
   border-radius: 20px;
   text-align: center;
   padding: 10px;
   margin-top: 20px;
-  height: 300px;
+  height: 150px;
 }
 .textHeaderFooter{
   color: black;
@@ -120,14 +128,18 @@ head{
 }
 
 /*INDEX*/
-.box1 {
-  background: #a90006;
-  width: 500px;
-  padding: 20px;
-  margin-top: 35px;
-  border-radius: 10px;
 
+.vids{
+  width: 420px;
+  height: 46.4px;
 }
+
+#tabla{
+  position: relative;
+  top: 70px;
+}
+
+
 
 /*BOTONES DESPLEGABLES*/
 *{
@@ -137,13 +149,16 @@ head{
 }
 
 section{
+  position: relative;
+  top: 100px;
   width: 700px;
-  padding: 40px;
+  padding: 0;
   background: #fffcfc;
   margin: right;
   margin-top: 20px;
   flex-direction: column;
   gap: 20px;
+  border: none ;
 }
 
 summary{
@@ -171,35 +186,28 @@ p{
 }
 
 .formFooter{
+  width: 600px;
   height: 100px;
 }
 
 .textFooter{
-  position: absolute;
+  position: fixed;
   left: 35%;
   top: 10%;
   height: 20px;
 }
 
 .submitFooter{
-  position:absolute;
-  left: 35%;
+  position:fixed;
+  left: 50%;
   top: 30%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social{
+  position: relative;
+  left: 0;
+  top: -20%;
+}
 
 
 #cassette{
