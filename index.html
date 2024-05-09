@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="textHeaderFooter">Cassette</title>
     <link rel="icon" href="image/jpg" href>
@@ -16,12 +17,16 @@
     <nav id="dropdownMenu">
     <ul>
       <li><img src="logo.png" alt="Logo" class="logo"></li>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#tabla">Inicio</a></li>
+      <li><a href="#playlist">Playlists</a></li>
+      <li><a href="#artistas">Artistas</a></li>
+      <li><a href="#quien">Quienes somos</a></li>
+      <li><a href="#metodos">Métodos de pago</a></li>
+      <li><a href="#preguntas">Preguntas frecuentes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
     </nav>
+
     <h2 class="centrado" class="textHeaderFooter">Sin buena musica la vida no seria la misma</h2>
     <table id="tabla">
       <tr>
@@ -32,29 +37,62 @@
         <td><a href="site_UnBesitoMas.html"><h3 class="vids">Exclusive.mp3 By: Emilia Mernes</h3></a><iframe width="420" height="236" src="https://www.youtube.com/embed/k-RoPmzJ0sw?si=llqaHE5SLFdjZxPr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </td>
         
-      </tr></center>
-     
+      </tr>
+
     </table>
-        <section>
-      
+
+    <div class="item" id="playlist">
+      <h5>PLAYLISTS</h5>
+      <p> info </p>
+    </div> 
+
+    <div class="item" id="artistas">
+      <h5>ARTISTAS</h5>
+      <p> info </p>
+    </div> 
+
+    <div class="item" id="quien">
+      <h5>QUIENES SOMOS</h5>
+      <div class="im" id="quien">
+        <p> En Cassette, la música es nuestra pasión y nuestro legado. Nacimos en una época donde los cassette reinaban, una era de cálidas melodías y recuerdos que perduran. Así es como llegamos a ser Cassette —una celebración de la nostalgia, la innovación y el poder intemporal de la música.
+          Hace poco, decidimos abrir nuestras puertas una vez más, recordando nuestros humildes comienzos y honrando la esencia de la música en su forma más pura. Como un cassette que se rebobina, volvimos para abrazar nuestras raíces y llevar la magia de la música analógica al mundo digital de hoy.
+
+          En Cassette creemos en la fuerza de la historia para inspirar el futuro. Desde entonces hasta ahora, hemos sido testigos de innumerables momentos musicales que han marcado generaciones. Y ahora, con un nuevo capítulo que se despliega ante nosotros, estamos listos para escribir las próximas páginas de la historia de la música.
+          Únete a nosotros en este viaje lleno de melodías, recuerdos y nuevos descubrimientos. En Cassette , la música es eterna y los corazones siguen vibrando al ritmo de un cassette que nunca se detiene.
+          ¡Bienvenidos a nuestra familia musical!
+        </p>
+         <img src="imgquienes.jpg" alt="img" class="img">
+    </div> 
+  </div>
+
+    <div class="item" id="metodos">
+      <h5>MÉTODOS DE PAGO</h5>
+      <p> info </p>
+    </div> 
+
+    <div id="preguntas">
+      <section> 
+          PREGUNTAS FRECUENTES
               <details>
-                  <summary> SOBRE NOSOTROS </summary>
+                  <summary> ¿Cuándo puedo cancelar el plan? </summary>
                   <P> info </P>
               </details>
               <details>
-                  <summary> PLAYLISTS  </summary>
+                  <summary> ¿?  </summary>
                   <P> info </P>
               </details>
               <details>
-                  <summary> METODOS DE PAGO </summary>
+                  <summary> ¿? </summary>
                   <P> info </P>
               </details>
         </section>
+      </div>
+  </body>
 
   <footer>
 
     <h4>Decinos si hay algo que le agregarias a este articulo</h4>
-    <form class="formFooter">
+    <form class="formFooter" id="contacto">
         <input type="text" name="comentarios" class="boxFooter" class="textFooter" placeholder="Escriba su comentario" required>
         <input  class="boxFooter" class="submitFooter" type="submit">
     </form>
