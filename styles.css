@@ -197,10 +197,12 @@ head{
 }
 
 /*SECCIONES*/
+html{
+  scroll-behavior: smooth;
+}
 .item{
   margin-top: 20px;
   scroll-margin-top: 75px;
-  font-size: 130%;
   text-align: center;
 
 }
@@ -209,14 +211,16 @@ head{
   scroll-margin-top: 75px;
   font-size: 130%;
   display: flex;
-  justify-content: center;
   margin-left: 100px;
   text-align: justify; 
 }
 
-html{
-  scroll-behavior: smooth;
+.textos {
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  display: inline-block;
 }
+
 .img {
   width: 350px; 
   height: 300px;
@@ -229,6 +233,42 @@ html{
 h5{
   font-family: Montserrat; 
   color: #f80f0f;
+  font-size: 130%;
+}
+
+.artista{
+  display: flex;
+  justify-content: center;
+
+}
+
+.art1{
+  width: 270px; 
+  height: 220px;
+  margin-right: 20px;
+  
+
+}
+.art2{
+  width: 270px; 
+  height: 220px;
+  margin-right: 20px;
+  
+  
+
+}
+.art3{
+  width: 270px; 
+  height: 220px;
+  
+
+}
+.art4{
+  width: 270px; 
+  height: 220px;
+  margin-left: 20px;
+  
+
 }
 
 /*BOTONES DESPLEGABLES*/
@@ -261,10 +301,11 @@ summary{
 }
 
 p{
-  padding: 15px;
+  padding: 20px;
   background: #333;
   color: white; 
   font-size: medium;
+
 }
 
 
