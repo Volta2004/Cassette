@@ -53,10 +53,11 @@ head{
   width: 300px;
   top: 20%;
   left: 40%;
+  z-index: 1;
 }
 #textSignInUp{
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: -10%;
   left: 15%;
   color: white;
   font-size: 25px;
@@ -93,21 +94,21 @@ head{
 }
 #email{
   position:absolute;
-  top: 32%;
+  top: 27%;
 }
 #username{
   position:absolute;
-  top: 47%;
+  top: 42%;
 }
 #password{
   position:absolute;
-  top: 62%;
+  top: 57%;
 }
 #boxRememberMe{
   position: absolute;
   padding: 10px;
   left: 20%;
-  top: 75%;
+  top: 70%;
   width: 7%;
 }
 #submit{ 
@@ -141,24 +142,25 @@ head{
   font-size: var(--sz);
   filter: blur(var(--blur));
   animation: animation 20s linear infinite;
-  transform: translate(var(--x-start), -15vh) rotate(0);
+  transform: translate(var(--x-start), -30vh) rotate(180deg);
   opacity: var(--a);
 }
 
 .rainDrop--s {
-  --sz: 1rem;
-  --blur: 2px;
+  --sz: 3rem;
+  --blur: 0px;
   --a: 0.8;
   --x-start: 50vw;
   --x-end: 0;
   --y-start: 0;
   --y-end: 100vh;
-  position: absolute;
+  z-index: 70;
+  position: relative;
 }
 
 .rainDrop--m {
-  --sz: 2rem;
-  --blur: 1px;
+  --sz: 4rem;
+  --blur: 0px;
   --a: 0.8;
   --x-start: 50vw;
   --x-end: 0;
@@ -169,7 +171,7 @@ head{
 }
 
 .rainDrop--l {
-  --sz: 3rem;
+  --sz: 5rem;
   --blur: 0px;
   --a: 0.8;
   --x-start: 50vw;
