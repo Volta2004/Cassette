@@ -303,7 +303,7 @@ summary{
 }
 
 p{
-  padding: 20px;
+  padding: 10px;
   background: #333;
   color: white; 
   font-size: medium;
@@ -361,7 +361,7 @@ footer{
   border-radius: 20px;
 }
 
-/*menu*/
+/*MENU*/
 #dropdownMenu {
   position: fixed;
   top: 0;
@@ -399,6 +399,8 @@ footer{
 #dropdownMenu ul li a:hover {
   background-color: #9b2020; 
 }
+
+/*LOGO ANIMACION*/
 
 .logo {
   width: 50px; 
