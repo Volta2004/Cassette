@@ -38,6 +38,10 @@ a {
   color: beige;
 }
 
+a:hover{
+  color: #ba090f;
+}
+
 head{
   position: sticky;
 }
@@ -333,14 +337,17 @@ footer{
 .boxFooter{
   background-color: white;
   color: black;
+  width: 50%;
   border-radius: 10px;
-  width: 400px;
   margin-bottom: 20px;
 }
 
+.textFooter{
+  width: 60%;
+}
 
 .submitFooter{
-
+  width: 10%;
   margin-bottom: 20px;
 }
 
