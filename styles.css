@@ -5,6 +5,11 @@ h1, h2, h4, p , ul{
     color: white;   
 }
 
+li{
+  color: #333;
+  text-align: left;
+}
+
 h3{
   font-family: Montserrat;
   color: white;
@@ -42,7 +47,37 @@ head{
   position: sticky;
 }
 
+h5{
+  text-align: center;
+}
 
+.caja {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.listasMetodos{
+  color: #333;
+}
+.metodo-pago{
+  display: inline-block;
+  margin: 30px;
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.metodo-pago img{
+  max-width: 100px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
 /*Sign*/
 
 .formulario{
