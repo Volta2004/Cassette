@@ -238,38 +238,6 @@ h5{
   font-size: 130%;
 }
 
-h6{
-  font-family: Montserrat;
-  color: white;
-  font-size: 100%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-.link1{
-  margin-top: 20px;
-  margin-left: 70px; 
-  margin-right: 120px; 
-
-} 
-.link2{
-  margin-top: 20px;
-  margin-left: 140px; 
-  margin-right: 110px; 
-
-}
-.link3{
-  margin-top: 20px;
-  margin-left: 110px; 
-  margin-right: 120px; 
-
-}
-.link4 {
-  margin-top: 20px;
-  margin-left: 120px; 
-  margin-right: 70px; 
-}
-
 .artista{
   display: flex;
   justify-content: center;
@@ -277,10 +245,10 @@ h6{
 }
 
 .art1, .art2, .art3, .art4 {
-  width: 270px;
-  height: 220px;
+  width: 240px;
+  height: 210px;
   margin: 0 10px; 
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 
