@@ -333,11 +333,6 @@ html{
   
 }
 
-h5{
-  font-family: Montserrat; 
-  color: #f80f0f;
-  font-size: 130%;
-}
 
 .artista{
   display: flex;
@@ -423,7 +418,15 @@ h5{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 50px;
   
+}
+
+h6{
+  font-family: Montserrat; 
+  color: #f80f0f;
+  font-size: 130%;
+  padding: 10px;
 }
 
 section{
@@ -435,6 +438,7 @@ section{
   font-family: Montserrat;
   border: none ;
   margin-bottom: 30px; 
+  padding: 10px;
 }
 
 summary{
@@ -464,7 +468,7 @@ footer{
   text-align: center;
   padding: 20px;
   width: 103%;
-  margin-top: 80px;
+  margin-top: 10px;
   height: 200px;
   flex-direction: column;
   justify-content: center; /* Centra horizontalmente el contenido */
