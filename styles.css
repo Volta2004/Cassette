@@ -250,9 +250,9 @@ h5{
 }
 
 #tabla{
-  position: auto;
+  position: center;
   margin-top: 20px;
-  
+  align-items: center;
 }
 
 /*SECCIONES*/
