@@ -16,6 +16,12 @@ h3{
   text-align: center;
 }
 
+h5{
+  font-family: Montserrat; 
+  color: #f80f0f;
+  font-size: 130%;
+}
+
 .imagenCassette{
   position: absolute;
   top: 0%;
@@ -51,10 +57,6 @@ head{
   position: sticky;
 }
 
-h5{
-  text-align: center;
-  color: #ba090f
-}
 
 /*Sign*/
 
@@ -134,49 +136,6 @@ h5{
 
 }
 
-/*Metodos de pago*/
-.caja {
-  background-color:rgb(239, 239, 229);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 3%;
-  width: 80%;
-  height: 80%;
-  align-items: center ;
-}
-
-.tablaMetodos{
-  width: 33.3%;
-  height: 80%;
-}
-
-.ulMetodos{
-  height: 211px;
-}
-
-.metodo-pago{
-  display: inline-block;
-  margin: 30px;
-  border: 1px solid #ba090f;
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 5px;
-  height: 211px;
-  width: 200px;
-}
-
-.metodo-pago img{
-  max-width: 100px;
-  max-height: 50px;
-  display: block;
-  margin: 0 auto;
-}
-
-.planes{
-  color: #ba090f;
-
-}
 
 /*ANIMACION*/
 .rain-container {
@@ -238,6 +197,58 @@ h5{
   position: absolute;
   z-index: 80;
 }
+/*MENU*/
+#dropdownMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  padding: 10px 0; 
+  box-shadow: 0 2px 5px rgb(255, 0, 0); 
+  z-index: 999; 
+}
+
+#dropdownMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#dropdownMenu ul li {
+  display: inline-block; 
+  margin-right: 20px;
+}
+
+#dropdownMenu ul li:last-child {
+  margin-right: 0;
+}
+
+#dropdownMenu ul li a {
+  color: #fff; 
+  text-decoration: none;
+  padding: 10px 15px; 
+  transition: background-color 0.3s ease; 
+}
+
+#dropdownMenu ul li a:hover {
+  background-color: #9b2020; 
+}
+
+/*LOGO ANIMACION*/
+
+.logo {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px; 
+  transition: transform 0.5s ease; /* Añade una transición suave al giro del logo */
+}
+
+.logo:hover {
+  transform: rotate(360deg); /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
+}
+
 
 /*INDEX*/
 
@@ -308,6 +319,55 @@ h5{
   margin-top: 3px;
 }
 
+/*Metodos de pago*/
+.caja {
+  background-color:rgb(239, 239, 229);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 22px;
+  margin: 7%;
+  width: 90%;
+  height: 80%;
+  align-items: center;
+
+}
+
+.tablaMetodos{
+  width: 33.3%;
+  height: 80%;
+}
+
+.ulMetodos{
+  height: 211px;
+  display: inline-block;
+}
+
+.metodo-pago{
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid #ba090f;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+
+.metodo-pago img{
+  max-width: 100px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.planes{
+  color: #ba090f;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
 
 /*BOTONES DESPLEGABLES*/
 *{
@@ -356,7 +416,7 @@ footer{
   padding: 20px;
   width: 103%;
   margin-top: 80px;
-  height: 150px;
+  height: 200px;
   flex-direction: column;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -383,9 +443,6 @@ footer{
   margin-bottom: 20px;
 }
 
-
-
-
 #cassette{
   text-align: left;
 }
@@ -400,57 +457,7 @@ footer{
   border-radius: 20px;
 }
 
-/*MENU*/
-#dropdownMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333; 
-  padding: 10px 0; 
-  box-shadow: 0 2px 5px rgb(255, 0, 0); 
-  z-index: 999; 
-}
 
-#dropdownMenu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-#dropdownMenu ul li {
-  display: inline-block; 
-  margin-right: 20px;
-}
-
-#dropdownMenu ul li:last-child {
-  margin-right: 0;
-}
-
-#dropdownMenu ul li a {
-  color: #fff; 
-  text-decoration: none;
-  padding: 10px 15px; 
-  transition: background-color 0.3s ease; 
-}
-
-#dropdownMenu ul li a:hover {
-  background-color: #9b2020; 
-}
-
-/*LOGO ANIMACION*/
-
-.logo {
-  width: 50px; 
-  height: auto;
-  margin-right: 10px; 
-  transition: transform 0.5s ease; /* Añade una transición suave al giro del logo */
-}
-
-.logo:hover {
-  transform: rotate(360deg); /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
-}
 
 
 
