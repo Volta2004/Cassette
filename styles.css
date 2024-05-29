@@ -221,16 +221,10 @@ head {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
-#tabla{
-  position: center;
-  margin-top: 20px;
-  align-items: center;
-=======
 #tabla {
   position: auto;
   margin-top: 20px;
->>>>>>> 2d9e10b01efaa092979b3e7e9745d2452a0d62e9
+  align-items: center;
 }
 
 /*SECCIONES*/
