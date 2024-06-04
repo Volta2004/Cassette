@@ -1,46 +1,46 @@
 // SignUp.html
 
-// Function to store the values inputted in SignUp.html
+// Función para almacenar los valores ingresados en SignUp.html
 function storeSignUpValues() {
-    // Get the input values
+    // Obtener los valores ingresados
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Store the values in localStorage
+    // Almacenar los valores en localStorage
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
 
-    // Open the SignIn.html
+    // Abrir SignIn.html
     window.location.href = "signIn.html";
 }
 
 // SignIn.html
 
-// Function to verify the values inputted in SignIn.html
+// Función para verificar los valores ingresados en SignIn.html
 function verifySignInValues() {
-    // Prevent the form from submitting (which would refresh the page)
+    // Evitar que el formulario se envíe (lo cual refrescaría la página)
     event.preventDefault();
 
-    // Get the input values
+    // Obtener los valores ingresados
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Retrieve the stored values from localStorage
+    // Recuperar los valores almacenados en localStorage
     var storedUsername = localStorage.getItem("username");
     var storedPassword = localStorage.getItem("password");
 
-    // Check if the input values match the stored values
+    // Verificar si los valores ingresados coinciden con los almacenados
     if (username === storedUsername && password === storedPassword) {
-        // Values match, perform sign in logic
+        // Los valores coinciden, realizar la lógica de inicio de sesión
         alert("Sign In exitoso");
-        // Redirect to index.html
+        // Redirigir a index.html
         window.location.href = "index.html";
 
     } else {
-        // Values do not match, display error message
+        // Los valores no coinciden, mostrar mensaje de error
         alert("La contraseña o el usuario no coinciden")
 
-        // Redirect to SignIn.html
+        // Redirigir a SignIn.html
         window.location.href = "signIn.html";
     }
 }

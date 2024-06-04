@@ -23,7 +23,7 @@ window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
 // Esperar a que la imagen se cargue antes de dibujarla
-img.onload = function() {
+img.onload = function () {
     // Ajustar el tamaño de la imagen
     let maxWidth, maxHeight;
     if (window.innerWidth <= 699) {
@@ -40,7 +40,7 @@ img.onload = function() {
         // Pantallas grandes (escritorio)
         maxWidth = canvas.width / 6;
         maxHeight = canvas.height / 6;
-        marginBottom = 350; 
+        marginBottom = 350;
     }
     const ratio = Math.min(maxWidth / img.width, maxHeight / img.height);
     imgWidth = img.width * ratio;
@@ -60,7 +60,7 @@ img.onload = function() {
         // Actualizar la posición
         x += dx;
         y += dy;
-       
+
         // Detectar colisiones con los bordes del canvas
         if (x + imgWidth > canvas.width || x < 0) {
             dx = -dx;
