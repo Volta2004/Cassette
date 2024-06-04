@@ -7,13 +7,14 @@ let imgWidth, imgHeight;
 
 // Crear una nueva imagen
 const img = new Image();
-img.src = 'logonuevo2.png'; // Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen
+img.src = 'imagenes/logonuevo2.png';
 
 // Ajustar el tamaño del canvas para que ocupe toda la pantalla
 const canvas = document.getElementById('animationCanvas');
 const ctx = canvas.getContext('2d');
 
 function resizeCanvas() {
+    const formHeight = document.querySelector('.formulario').offsetHeight;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 }
@@ -24,11 +25,29 @@ resizeCanvas();
 // Esperar a que la imagen se cargue antes de dibujarla
 img.onload = function() {
     // Ajustar el tamaño de la imagen
-    const maxWidth = window.innerWidth / 5;
-    const maxHeight = window.innerHeight / 5;
+    let maxWidth, maxHeight;
+    if (window.innerWidth <= 699) {
+        // Pantallas pequeñas (teléfonos móviles)
+        maxWidth = canvas.width / 3;
+        maxHeight = canvas.height / 3;
+        marginBottom = 100;  // Margen para colisiones en el borde inferior
+    } else if (window.innerWidth <= 1150) {
+        // Pantallas medianas (tabletas)
+        maxWidth = canvas.width / 4;
+        maxHeight = canvas.height / 4;
+        marginBottom = 100;
+    } else if (window.innerWidth >= 1150) {
+        // Pantallas grandes (escritorio)
+        maxWidth = canvas.width / 6;
+        maxHeight = canvas.height / 6;
+        marginBottom = 350; 
+    }
     const ratio = Math.min(maxWidth / img.width, maxHeight / img.height);
     imgWidth = img.width * ratio;
     imgHeight = img.height * ratio;
+
+    if (x + imgWidth > canvas.width) x = canvas.width - imgWidth;
+    if (y + imgHeight > canvas.height) y = canvas.height - imgHeight;
 
     // Función para dibujar la animación
     function draw() {
@@ -41,9 +60,7 @@ img.onload = function() {
         // Actualizar la posición
         x += dx;
         y += dy;
-
-        // Margen para colisiones en el borde inferior
-        const marginBottom = 43; // Ajusta este valor según sea necesario
+       
         // Detectar colisiones con los bordes del canvas
         if (x + imgWidth > canvas.width || x < 0) {
             dx = -dx;

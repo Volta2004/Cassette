@@ -1,9 +1,5 @@
 /*GENERAL*/
-h1,
-h2,
-h4,
-p,
-ul {
+h1, h2, h4, p, ul {
   font-family: Montserrat;
   color: white;
 }
@@ -23,6 +19,7 @@ h5 {
   font-family: Montserrat;
   color: #f80f0f;
   font-size: 130%;
+  padding: 5px;
 }
 
 .imagenCassette {
@@ -31,13 +28,11 @@ h5 {
   border-radius: 10%;
 }
 
-
 body {
   background-color: #333;
   height: 220vh;
   width: 210vh;
-  overflow-x: hidden;
-  /* que no se mueva al costado */
+  overflow-x: hidden; /* que no se mueva al costado */
 }
 
 /*velocidad del choque*/
@@ -80,6 +75,12 @@ head {
   top: 20%;
   left: 40%;
   z-index: 1;
+}
+
+.centrado {
+  color: rgb(249, 246, 246);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #textSignInUp {
@@ -198,26 +199,33 @@ head {
   width: 50px;
   height: auto;
   margin-right: 10px;
-  transition: transform 0.5s ease;
-  /* Añade una transición suave al giro del logo */
+  transition: transform 0.5s ease; /* Añade una transición suave al giro del logo */
 }
 
 .logo:hover {
-  transform: rotate(360deg);
-  /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
+  transform: rotate(360deg); /* Gira el logo 360 grados cuando se pasa el mouse sobre él */
 }
 
 /*INDEX*/
-.vids {
-  width: 420px;
-  height: 46.4px;
-  scroll-margin-top: 75px;
-  margin-top: 20px;
+#tabla {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#tabla {
-  position: auto;
-  margin-top: 20px;
+#tabla tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#tabla td {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -255,21 +263,12 @@ html {
   align-items: center;
 }
 
-h5 {
-  font-family: Montserrat;
-  color: #f80f0f;
-  font-size: 130%;
-}
-
 .artista {
   display: flex;
   justify-content: center;
 }
 
-.art1,
-.art2,
-.art3,
-.art4 {
+.art1, .art2, .art3, .art4 {
   width: 240px;
   height: 210px;
   margin: 0 10px;
@@ -343,6 +342,7 @@ h5 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 75px;
 }
 
 section {
@@ -383,10 +383,8 @@ footer {
   margin-top: 80px;
   height: 200px;
   flex-direction: column;
-  justify-content: center;
-  /* Centra horizontalmente el contenido */
-  align-items: center;
-  /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
 }
 
 #contacto {
@@ -414,22 +412,8 @@ footer {
   text-align: left;
 }
 
-.centrado {
-  color: rgb(249, 246, 246);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .temas {
   border-radius: 20px;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 canvas {
@@ -437,3 +421,246 @@ canvas {
   width: 100%;
   height: 100%;
 }
+
+/* Responsive para celulares */
+@media (max-width: 699px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  #dropdownMenu ul {
+    display: none;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgb(255, 0, 0);
+    align-items: center;
+  }
+
+  #dropdownMenu .menu-title {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #dropdownMenu ul li {
+    margin: 10px 0;
+    list-style-type: none;
+  }
+
+  #dropdownMenu:hover ul {
+    display: flex;
+  }
+
+  table#tabla {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  table#tabla tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  table#tabla td {
+    display: block;
+    width: 100%;
+    clear: both; /* Asegura que los videos se coloquen uno debajo del otro */
+  }
+
+  .item p iframe{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .im {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .img {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .artista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .art1, .art2, .art3, .art4 {
+    width: 45%;
+    height: auto;
+    margin: 10px;
+  }
+ 
+  .tablaMetodos {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .caja {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .metodo-pago {
+    width: 100%;
+    height: auto;
+  }
+  
+  .ulMetodos {
+    height: auto;
+  }
+  
+  .boton-registro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .formulario {
+    width: 50%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+  
+  #textSignInUp {
+      position: absolute;
+      top: -10%;
+      left: 15%;
+      color: white;
+      font-size: 25px;
+    }
+  }
+
+/* Responsive para pantallas grandes*/
+@media (min-width: 1150px) {
+  body{
+    overflow-x: hidden; /* que no se mueva al costado */
+  }
+
+  #dropdownMenu .menu-title {
+    display: none;
+  }
+
+  .centrado {
+    color: rgb(249, 246, 246);
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 80px;
+  }
+
+}
+
+/* Responsive para tablets */
+@media (min-width: 700px) and (max-width: 1149px){
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  #dropdownMenu ul {
+    display: none;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgb(255, 0, 0);
+    align-items: center;
+  }
+
+  #dropdownMenu .menu-title {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #dropdownMenu ul li {
+    margin: 10px 0;
+    list-style-type: none;
+  }
+
+  #dropdownMenu:hover ul {
+    display: flex;
+  }
+
+  table#tabla td {
+    margin: 10px;
+  }
+
+  .im {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .img {
+    width: 40%;
+    height: auto;
+  }
+
+  .artista {
+    justify-content: center;
+  }
+
+  .art1, .art2, .art3, .art4 {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    margin-top: 3px;
+  }
+
+  .tablaMetodos {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .caja {
+    width: 90%;
+    margin: 5% auto;
+    margin-bottom: 20px;
+  }
+  
+  .metodo-pago {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .ulMetodos {
+    height: auto;
+  }
+  
+  .boton-registro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .centrado {
+    margin-left: 90px;
+  }
+  }

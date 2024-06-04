@@ -1,5 +1,3 @@
-
-
 // SignUp.html
 
 // Function to store the values inputted in SignUp.html
