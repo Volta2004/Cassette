@@ -26,12 +26,7 @@ resizeCanvas();
 img.onload = function () {
     // Ajustar el tamaño de la imagen
     let maxWidth, maxHeight;
-    if (window.innerWidth <= 699) {
-        // Pantallas pequeñas (teléfonos móviles)
-        maxWidth = canvas.width / 3;
-        maxHeight = canvas.height / 3;
-        marginBottom = 100;  // Margen para colisiones en el borde inferior
-    } else if (window.innerWidth <= 1150) {
+  if (window.innerWidth <= 1150) {
         // Pantallas medianas (tabletas)
         maxWidth = canvas.width / 4;
         maxHeight = canvas.height / 4;
