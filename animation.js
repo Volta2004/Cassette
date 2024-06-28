@@ -33,8 +33,8 @@ img.onload = function () {
         marginBottom = 100;
     } else if (window.innerWidth >= 1150) {
         // Pantallas grandes (escritorio)
-        maxWidth = canvas.width / 6;
-        maxHeight = canvas.height / 6;
+        maxWidth = canvas.width / 10;
+        maxHeight = canvas.height / 4;
         marginBottom = 350;
     }
     const ratio = Math.min(maxWidth / img.width, maxHeight / img.height);
