@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title class="textHeaderFooter">Cassette</title>
-  <link rel="icon" href="imagenes/logonuevo.ico">
+  <meta charset="UTF-8"> <!-- Define la codificación de caracteres que debe usar el navegador para interpretar el documento HTML.-->>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la escala de la página para que se ajuste a la pantalla del dispositivo.-->
+  <title class="textHeaderFooter">Cassette</title> <!-- Especifica el título del documento, que aparece en la pestaña del navegador.-->>
+  <link rel="icon" href="imagenes/logonuevo.ico"> <!-- Define el icono de la página web que aparece en la pestaña del navegador.-->
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="JavaScript" href="../JavaScript/site.js">
+  <script src="../JavaScript/site.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&display=swap" rel="stylesheet">
+  <!--Enlaza una hoja de estilos CSS externa específica para fuentes, en este caso, fuentes de Google.-->>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
     <div class="menu-title">
       <h3>MENÚ</h3>
     </div>
-    <ul>
+    <ul> <!--Define una lista no ordenada.-->
       <li><img src="imagenes/logonuevo.png" alt="Logo" class="logo"></li>
       <li><a href="#tabla">Inicio</a></li>
       <li><a href="#playlist">Playlists</a></li>
@@ -59,9 +58,7 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </td>
-
     </tr>
-
   </table>
   <!--Playlist insertadas desde spotify. codigo ya realizado-->
   <div class="item" id="playlist">
@@ -72,56 +69,55 @@
         height="152" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSo7PX7dbgH8?utm_source=generator" width="30%"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSo7PX7dbgH8?utm_source=generator" width="30%"  
         height="152" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator" width="30%"
         height="152" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <p>
-
+    </p>
   </div>
   <!--Imagenes de nuestros artistas con links que te rediregen a sus perfiles en spotify-->
   <div class="item" id="artistas">
     <h5>ARTISTAS</h5>
-    <div class="artista" id="artistas">
+    <div class="artista">
       <a href="https://open.spotify.com/artist/7vXDAI8JwjW531ouMGbfcp?si=qNoLtBR5SFC9aubhyqgPmA" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/tini.jpg" alt="art1" class="art1"></p>
+        <div class="artista">
+          <p><img src="imagenes/tini.jpg" class="art1"></p>
         </div>
       </a>
       <a href="https://open.spotify.com/artist/6HTUcOExehqydqa7C3usAa?si=GIKx60sdS1CrrEFDLdqOxw" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/abel.jpg" alt="art2" class="art2"></p>
+        <div class="artista">
+          <p><img src="imagenes/abel.jpg" class="art2"></p>
         </div>
       </a>
       <a href="https://open.spotify.com/artist/0AqlFI0tz2DsEoJlKSIiT9?si=rThH5teXTyeLtEHaXtwsVQ" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/emilia.jpg" alt="art3" class="art3"></p>
+        <div class="artista">
+          <p><img src="imagenes/emilia.jpg" class="art3"></p>
         </div>
       </a>
       <a href="https://open.spotify.com/artist/4kcQWQDK0u9AftVSpdrAgk?si=cTIxjk-RRgSefbb5B5_ANA" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/luckra.jpeg" alt="art4" class="art4"></p>
+        <div class="artista">
+          <p><img src="imagenes/luckra.jpeg" class="art4"></p>
         </div>
       </a>
     </div>
 
     <div class="artista" id="artistas">
       <a href="https://open.spotify.com/artist/4STEdt6oH8RopaxpfWrO5Z?si=kkq9x4UNSC-GQtYoWAJqzQ" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/cruzandoelcharco.jpg" alt="art1" class="art1"></p>
+        <div class="artista">
+          <p><img src="imagenes/cruzandoelcharco.jpg" class="art1"></p>
         </div>
       </a>
       <a href="https://open.spotify.com/artist/4ZDoy7AWNgQVmX7T0u0B1j?si=UZVuLqpkQyG_L-zXEvAWWw" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/ntvag.jpg" alt="art2" class="art2"></p>
+        <div class="artista">
+          <p><img src="imagenes/ntvag.jpg" class="art2"></p>
         </div>
       </a>
       <a href="https://open.spotify.com/artist/6jRUKVZllu1wtgXHbqvUmT?si=0ySex5kpTLmNUl0TzOJ4YA" target="_BLANK">
-        <div class="artista" id="artistas">
-          <p><img src="imagenes/kuelgue.jpg" alt="art3" class="art3"></p>
+        <div class="artista">
+          <p><img src="imagenes/kuelgue.jpg" class="art3"></p>
         </div>
       </a>
     </div>
@@ -129,7 +125,7 @@
   <!--Informacion de quienes somos. Logo-->
   <div class="item" id="quien">
     <h5>QUIENES SOMOS</h5>
-    <div class="im" id="quien">
+    <div class="im">
       <div class="textos">
         <p>
           En Cassette, la música es nuestra pasión y nuestra esencia. Nacimos en una época donde los cassettes reinaban,
@@ -146,14 +142,12 @@
           sus formas y te invitamos a ser parte de nuestra familia musical.
         </p>
       </div>
-      <img src="imagenes/logonuevo.png" alt="img" class="img">
+      <img src="imagenes/logonuevo.png" class="img">
     </div>
   </div>
-
   <!--Metódos de pagos para los distintos planes y registrarse para mas info-->
   <div class="item" id="metodos">
     <h5>MÉTODOS DE PAGO</h5>
-
     <table>
       <tr class="tablaMetodos">
         <td>
@@ -291,11 +285,12 @@
 <footer>
   <!--Resenas de los clientes y nuestras redes sociales-->
   <h4>Decinos si hay algo que le agregarias a este articulo</h4>
+   <!-- Formulario de contacto -->
   <form class="formFooter" id="contacto">
-    <input type="text" name="comentarios" class="boxFooter" class="textFooter" placeholder="Escriba su comentario"
-      required>
+    <input type="text" name="comentarios" class="boxFooter" class="textFooter" placeholder="Escriba su comentario" required>
     <input class="boxFooter" class="submitFooter" type="submit">
   </form>
+  <!-- Redes sociales -->
   <div class="social">
     <h4>Contactanos</h4>
     <a href="https://www.instagram.com/cassette_discografica" target="_BLANK">Instagram</a>
@@ -303,9 +298,6 @@
     <a href="mailto:lucasrodriguezrichard@gmail.com" target="_blank"
       title="If the link doesn't work, please copy the email address and paste it into your email client.">Email Us</a>
   </div>
-
-
-
 </footer>
 
 </html>
